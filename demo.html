@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Positioning Items</title>
+	<meta charset="UTF-8">
+    <link rel="stylesheet" href="style2.css"/>
+    <link rel="stylesheet" href="style.css"/>
+	<style>  
+         
+        /*////////////////////
+        // Positioning items    
+        //////////////////////
+        
+        Reset *
+        Display: inline vs block
+        https://www.w3schools.com/cssref/pr_class_display.asp
+    
+        Box-sizing
+        https://www.w3schools.com/css/css3_box-sizing.asp
+        
+        Using percentages and max-width
+        https://www.w3schools.com/cssref/css_units.asp
+    
+        Float and clear
+        https://www.w3schools.com/cssref/pr_class_float.asp
+        
+        Flexbox - https://www.w3schools.com/css/css3_flexbox.asp
+        
+        Absolute/Relative positioning
+        https://www.w3schools.com/cssref/pr_class_position.asp
+          
+        Centering
+        https://www.w3schools.com/css/css_align.asp
+        
+        */
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+        }
+    
+        .box {
+            height: 100px;
+            width: 20%;
+            border: 1px solid black;
+            color: aliceblue;
+            float: left;
+            /*display: inline-block;*/
+        }
+        
+        #red { background-color: red;}
+        #green { background-color: green;}
+        #blue { background-color: blue;}
+        #yellow { background-color: yellow; color: black;}
+        #orange { background-color: orange;}
+      
+        .clear { 
+            clear: both;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    
+        /* img */
+        img {
+        }
+        
+        /* container */
+        .container {           
+        }
+        
+        /* relative and absolute positioning with blue */      
+        #blue {
+        }
+
+        p {
+            color:blue;
+        }
+
+        p {
+            color:brown;
+        }
+
+        #info {
+            color:yellow;
+            font-size: 30px;
+        }
+        
+        .vihrea {
+            color:green;
+        }
+
+        .oranssi {
+            color: orange;
+        }
+
+        .lause {
+            font-size: large;
+            color: purple;
+        }
+
+        main {
+            background-color: aquamarine;
+            padding: 20px ;
+            margin: 40px auto;
+            border: 2px dashed black;
+            width: 50%;
+            position: relative;
+        }
+
+        .katti {
+            width: 200px;
+            height: auto;
+            float: left;
+            margin-right: 20px;
+        }
+        /*nav {
+            overflow: hidden;
+        }*/
+        .lodju {
+            width: 100px;
+            height: 100px;
+            background-color: hotpink;
+            position: absolute;
+            top: -30px;
+            right: -30px;
+        }
+
+        .lodju2 {
+            width: 100px;
+            height: 100px;
+            background-color: turquoise;
+            position: fixed;
+            right: 0;
+            top: calc(50% - 50px);
+        }
+    </style>
+    </head>
+
+<body>
+    <nav class="clearfix">
+    <div class="box" id="red">Box 1</div>  
+    <div class="box" id="green">Box 2</div> 
+    <div class="box" id="blue">Box 3</div>  
+    <div class="box" id="yellow">Box 4</div>  
+    <div class="box" id="orange">Box 5</div>
+    </nav>
+
+    <!-- Float continues, clearing -->
+    <main>
+        <div class="lodju">1</div>
+        <div class="lodju2">2</div>
+        <h1>Heading 1</h1>
+        <h1>Heading 2</h1>
+
+        <div>moikku</div>
+        
+        <!-- Responsive images and centering -->  
+        <p class="vihrea oranssi">
+            <spam class="lause">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </spam>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consequatur libero recusandae laudantium dolore commodi sunt provident, placeat doloribus eveniet, 
+            cumque atque veniam, fuga soluta? 
+            Officia unde in neque aliquid enim.
+        </p>
+        <p id="info" class="vihrea oranssi" style="color:pink">
+            <img src="Kissan-hampaidenhoito.jpg" alt="kissa pesee hampaita" class="katti"/>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Rem dolorem blanditiis quidem omnis et dolores sapiente suscipit.
+            Blanditiis, minus possimus fugiat minima vel perferendis temporibus ea tempore delectus, iure consequuntur?
+            Odit quod voluptatem perspiciatis laudantium atque consequatur? 
+            Modi cum ab eveniet vel voluptatum repudiandae harum blanditiis 
+            officiis aperiam reprehenderit amet quis delectus eius unde, sunt sint tempora provident nisi porro!
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Veniam aut odio mollitia ullam provident esse nihil alias quae rem, 
+            suscipit nisi distinctio culpa itaque et quas? Est sit labore perferendis!
+        </p>
+    </main>
+    <footer>copyright</footer>
+     
+</body>
+</html>

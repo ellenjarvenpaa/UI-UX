@@ -1,0 +1,95 @@
+:root {
+  --slate-blue: #6753BFff;
+  --brown-sugar: #A9644Fff;
+  --smoky-black: #0E0301ff;
+  --bistre: #281D0Dff;
+  --fandango: #AA4693ff;
+}
+
+body {
+  margin: 0;
+  background-color: lightpink;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body:has(dialog[open]) {
+  overflow-y: hidden;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: 80px;
+  margin-right: 80px;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--bistre);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: var(--bistre);
+  color: var(--fandango);
+}
+
+.logo {
+  color: var(--fandango);
+  background-color: var(--bistre);
+}
+
+.lisaa {
+  margin-left: 80px;
+}
+
+main {
+  background-color: gainsboro;
+  margin: 80px;
+  margin-top: 120px;
+  padding: 40px;
+  padding-bottom: 120px;
+  position: relative;
+  /*background-image: url("funky.jpg");*/
+}
+
+/*.teksti {
+  background-color: rgba(175, 159, 168, 0.7);
+}*/
+
+.ravintola {
+  width: 300px;
+  height: auto;
+  float: left;
+  margin: 20px;
+}
+
+.cocktail {
+  width: 150px;
+  height: 200px;
+  position: absolute;
+  top: -70px;
+  right: -30px;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--bistre);
+  color: white;
+  margin-bottom: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+

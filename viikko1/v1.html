@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="v1.css"/>
+    <link rel="stylesheet" href="dialogi.css">
+    <title>The Cocktail Bar</title>
+<script src="dialogi.js" defer></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="the cocktail bar" class="logo">The Cocktail Bar</a></li>
+            <li><a href="#etusivu">Etusivu</a></li>
+            <li><a href="#ruokalistat">Ruokalistat</a></li>
+            <li><a href="#yhteystiedot">Yhteystiedot</a></li>
+        </ul>
+    </nav>
+    <p class="lisaa">Tänne tulee lisää sisältöä seuraavilla viikoilla</p>
+    <button id="open_dialog">Open Dialog</button>
+    <button id="darkmode">Dark mode</button>
+    <main>
+        <img src="cocktail.jpeg" alt="cocktail" class="cocktail">
+        <img src="rafla.jpg" alt="upea ravintola sali" class="ravintola"/>
+        <h1 class="teksti">Cocktails made with passion</h1>
+        <p class="teksti">mäy mäy mäy mäy mäy mäy mäy mäy mäy mäy mäy
+            mäy mäy mäy mäy mäy mäy mäy mäy mäy mäy mäy mäy mäy mäy
+            mäy mäy mäy mäy mäy mäy mäy mäy mäy mäy mäy mäy mäy mäy
+        </p>
+    </main>
+    <footer>Copyright ellenj</footer>
+    <dialog>
+      <img src="cheers.jpg" 
+      alt="cocktail glasses" />
+      <h2 id="dialog_title" class="h2">Sign in as a member</h2>
+      <p id="dialog_description">
+      Receive monthly newsletters on upcoming events and be the first to know!
+      </p>
+      <style>
+        .myForm {
+          margin: 30px;
+        }
+        .myForm input {
+          margin: 10px;
+          padding: 10px;
+        }
+        /*.myForm input:required{
+          background-color: red;
+        }*/
+        .myForm input:invalid {
+          background-color: red;
+        }
+        .myForm input:valid {
+          background-color: green;
+        }
+      </style>
+      <form class="myForm" method="post">
+        <label for="username">Enter your name (min 3 characters): </label>
+        <input 
+        type="text" 
+        name="username" 
+        autocomplete="name" 
+        id="nimikentta" 
+        placeholder="Nimi tähän" 
+        minlength="3"
+        required/>
+        <label for="password">Enter your password:</label>
+        <input 
+        type="password" 
+        name="password" 
+        id="pwd" 
+        placeholder="Salasana tähän"
+        required/>
+        <input type="submit" value="Send"/>
+      </form>
+      <div class="flex flex-space-between">
+      <button id="close_dialog">Close</button>
+      <button id="confirm_dialog" class="cta">Confirm</button>
+      </div>
+  </dialog>
+</body>
+</html>
