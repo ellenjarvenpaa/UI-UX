@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+  /* Desktop first*/
+body {
+  background-color: lightgreen;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+p {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 650px) and (max-width: 750px) {
+  h1 {
+    color: green;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  main {
+    width: 800px;
+    margin: auto;
+  }
+
+  h2 {
+    display: none;
+  }
+}
+
+</style>
+</head>
+<body>
+  <main>
+    <p>Resize the browser window. When the width of this document is 600 pixels or less, the background-color is "lightblue", otherwise it is "lightgreen".</p>
+<h1>Otsikko</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+  Fugit, corporis consectetur nihil eaque facere voluptatem provident quam ipsam, 
+  sapiente tempore beatae repellendus temporibus laboriosam repudiandae, 
+  earum et in. Veniam, beatae.
+</p>
+<h2>Toinen otsikko</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+  Eligendi ipsam fuga at et quisquam, nihil ducimus veritatis earum modi 
+  molestiae facilis distinctio maiores tempora exercitationem incidunt, 
+  ab mollitia veniam consequatur.
+</p>
+  </main>
+</body>
+</html>

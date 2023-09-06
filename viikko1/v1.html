@@ -37,41 +37,35 @@
       <p id="dialog_description">
       Receive monthly newsletters on upcoming events and be the first to know!
       </p>
-      <style>
-        .myForm {
-          margin: 30px;
-        }
-        .myForm input {
-          margin: 10px;
-          padding: 10px;
-        }
-        /*.myForm input:required{
-          background-color: red;
-        }*/
-        .myForm input:invalid {
-          background-color: red;
-        }
-        .myForm input:valid {
-          background-color: green;
-        }
-      </style>
       <form class="myForm" method="post">
         <label for="username">Enter your name (min 3 characters): </label>
         <input 
-        type="text" 
-        name="username" 
-        autocomplete="name" 
-        id="nimikentta" 
-        placeholder="Nimi tähän" 
-        minlength="3"
-        required/>
+            type="text" 
+            name="username" 
+            autocomplete="name" 
+            id="nimikentta" 
+            placeholder="Nimi tähän" 
+            minlength="3"
+            required
+          />
+        <label for="yourEmail">Enter your email @metroplia.fi</label>
+        <input
+              type="email"
+              name="yourEmail"
+              id="yourEmail"
+              pattern=".+@metropolia\.fi"
+              placeholder="@metropolia.fi"
+              required
+            />
         <label for="password">Enter your password:</label>
         <input 
-        type="password" 
-        name="password" 
-        id="pwd" 
-        placeholder="Salasana tähän"
-        required/>
+            type="password" 
+            name="password" 
+            id="pwd" 
+            placeholder="Salasana tähän"
+            patter="^(?!.*[\s])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+            required
+            />
         <input type="submit" value="Send"/>
       </form>
       <div class="flex flex-space-between">
