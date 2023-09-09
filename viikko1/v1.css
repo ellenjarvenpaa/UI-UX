@@ -74,6 +74,19 @@ main {
   margin: 20px;
 }
 
+@media only screen and (max-width: 650px) {
+  .ravintola {
+    float: none;
+    max-width: 100%;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .cocktail {
+
+  }
+}
+
 .cocktail {
   width: 150px;
   height: 200px;
@@ -90,6 +103,5 @@ footer {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-
 
 
