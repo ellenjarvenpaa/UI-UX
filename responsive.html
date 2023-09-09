@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+  /* Desktop first*/
+
+html { 
+  background: url(background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  /*background-color: lightgreen;*/
+}
+
+h1 {
+  font-size: 30px;
+}
+
+p {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    /*background-color: lightblue;*/
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 650px) and (max-width: 750px) {
+  h1 {
+    color: green;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  main {
+    width: 800px;
+    margin: auto;
+  }
+}
+
+#kissa {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  display: block;
+}
+
+#katti {
+  width: 500px;
+  height: 700px;
+  object-fit: contain;
+}
+
+#taustakuva {
+  width: 50%;
+  height: 300px;
+  background-color: bisque;
+  background-image: url(funky.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: unset;
+}
+
+@media screen and (min-width:600px) {
+  #taustakuva {
+    background-image: url(Kissan-hampaidenhoito.jpg);
+    background-attachment: fixed;
+  }
+}
+</style>
+</head>
+<body>
+  <main>
+    <p>Resize the browser window. When the width of this document is 600 pixels or less, the background-color is "lightblue", otherwise it is "lightgreen".</p>
+<h1>Otsikko</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+  Fugit, corporis consectetur nihil eaque facere voluptatem provident quam ipsam, 
+  sapiente tempore beatae repellendus temporibus laboriosam repudiandae, 
+  earum et in. Veniam, beatae.
+</p>
+<h2>Toinen otsikko</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+  Eligendi ipsam fuga at et quisquam, nihil ducimus veritatis earum modi 
+  molestiae facilis distinctio maiores tempora exercitationem incidunt, 
+  ab mollitia veniam consequatur.
+</p>
+  </main>
+  <h2>Max-width ja margin auto kuvalla</h2>
+  <img src="Kissan-hampaidenhoito.jpg" alt="kissa" id="kissa"/>
+
+  <h2>Object:fit kuvalle</h2>
+
+  <img src="Kissan-hampaidenhoito.jpg" alt="kissa" id="katti"/>
+
+  <h2>HTML picture element</h2>
+
+  <picture>
+    <source srcset="https://www.w3schools.com/css/img_smallflower.jpg" media="(max-width: 400px)">
+    <source srcset="https://www.w3schools.com/css/img_flowers.jpg">
+    <img src="https://www.w3schools.com/css/img_flowers.jpg" alt="Flowers" style="width:auto;">
+  </picture>
+
+  <h2>Taustakuva</h2>
+
+  <div id="taustakuva"></div>
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Minus incidunt sint cupiditate provident esse, est ex labore sunt ipsa 
+    doloremque beatae odit nisi hic explicabo soluta, dolores odio praesentium eligendi. Lorem, 
+    ipsum dolor sit amet consectetur adipisicing elit. Voluptate aliquid saepe ad asperiores 
+    officia error magni repellat? Voluptatum, error quae, laboriosam nesciunt nulla facere a 
+    harum repellat illum porro eveniet?</p>
+
+</body>
+</html>
