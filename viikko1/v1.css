@@ -55,6 +55,9 @@ body:has(dialog[open]) {
   #taustakuva {
     height: 150px;
   }
+  #banner_text {
+    font-size: 20px;
+  }
 }
 
 ul {
@@ -116,6 +119,33 @@ li a:hover {
 
 #drink_options {
   margin: 5px;
+}
+
+.grid {;
+  grid-template-rows: 1fr 1fr;
+  display: grid;
+  margin: 80px;
+}
+
+.griditem {
+  text-align: center;
+  border: 5px solid #AA4693;
+}
+
+.grid1 {
+  background-color: whitesmoke;
+  border-radius: 25px;
+  margin-right: 40px;
+  grid-row: 1 / 3;
+  height: auto;
+}
+
+.grid2 {
+  background-color: whitesmoke;
+  border-radius: 25px;
+  margin-left: 40px;
+  grid-row: 1 / 3;
+  height: auto;
 }
 
 main {
