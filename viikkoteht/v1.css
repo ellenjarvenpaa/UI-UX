@@ -35,7 +35,7 @@ body:has(dialog[open]) {
   margin-right: 80px;
   height: 300px;
   background-color: #ffc88f;
-  background-image: url(/viikkoteht/kuvat/banner.jpg);
+  background-image: url(banner.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -121,7 +121,7 @@ li a:hover {
   margin: 5px;
 }
 
-.grid {;
+.grid {
   grid-template-rows: 1fr 1fr;
   display: grid;
   margin: 80px;
