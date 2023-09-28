@@ -99,14 +99,15 @@ button {
     border-left: 10px solid black;
     background-color: white;
     transition: border-color 1s;
+    border-radius: 7px;
   }
 
   .myForm input:invalid {
-    border-left-color: red;
+    border-left-color: #ff6666;
   }
 
   .myForm input:valid {
-    border-left-color: green;
+    border-left-color: #85e085;
   }
   
   .myForm input:focus {

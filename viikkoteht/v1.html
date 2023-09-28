@@ -76,7 +76,7 @@
       Receive monthly newsletters on upcoming events and be the first to know!
       </p>
       <form class="myForm" method="post">
-        <label for="username">Enter your name (min 3 characters): </label>
+        <label for="username">Enter your name (min 3 characters):</label>
         <input 
             type="text" 
             name="username" 
@@ -86,7 +86,7 @@
             minlength="3"
             required
           />
-        <label for="yourEmail">Enter your email @metroplia.fi</label>
+        <label for="yourEmail"><br>Enter your email @metropolia.fi:<br></label>
         <input
               type="email"
               name="yourEmail"
@@ -95,8 +95,8 @@
               placeholder="@metropolia.fi"
               required
             />
-        <label for="password">Enter your password:</label>
-        <input 
+        <label for="password"><br>Enter your password:<br></label>
+        <input
             type="password" 
             name="password" 
             id="pwd" 
@@ -104,11 +104,10 @@
             patter="^(?!.*[\s])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
             required
             />
-        <input type="submit" value="Send"/>
       </form>
       <div class="flex flex-space-between">
       <button id="close_dialog">Close</button>
-      <button id="confirm_dialog" class="cta">Confirm</button>
+      <button id="confirm_dialog" class="cta" type="submit" value="Send">Confirm</button>
       </div>
   </dialog>
 </body>
